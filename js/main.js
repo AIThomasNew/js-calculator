@@ -25,3 +25,16 @@ minusButton.addEventListener('click', function () {
   resultText.innerText = diff;
 });
 
+divideButton.addEventListener('click', function () {
+  let numOne = parseInt(numberOne.value);
+  let numTwo = parseInt(numberTwo.value);
+  let den = numOne / numTwo;
+  resultText.innerText = den;
+});
+
+multiplyButton.addEventListener('click', function () {
+  let numOne = parseInt(numberOne.value);
+  let numTwo = parseInt(numberTwo.value);
+  let comp = numOne * numTwo;
+  resultText.innerText = comp;
+});
