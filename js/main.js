@@ -10,6 +10,13 @@ let clearButton = document.querySelector('.clear');
 
 let resultText = document.querySelector('.resut');
 
+// функция очистки
+clearButton.addEventListener('click', function () {
+  resultText.innerText = '';
+  numberOne.value = '';
+  numberTwo.value = '';
+});
+
 // функции сложения, вычитания, деления, умножения
 plusButton.addEventListener('click', function () {
   let numOne = parseInt(numberOne.value);
