@@ -10,11 +10,18 @@ let clearButton = document.querySelector('.clear');
 
 let resultText = document.querySelector('.resut');
 
+// функции сложения, вычитания, деления, умножения
 plusButton.addEventListener('click', function () {
   let numOne = parseInt(numberOne.value);
   let numTwo = parseInt(numberTwo.value);
-
-  let sum numOne + numTwo; 
-
+  let sum = numOne + numTwo;
   resultText.innerText = sum;
 });
+
+minusButton.addEventListener('click', function () {
+  let numOne = parseInt(numberOne.value);
+  let numTwo = parseInt(numberTwo.value);
+  let diff = numOne - numTwo;
+  resultText.innerText = diff;
+});
+
