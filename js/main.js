@@ -8,7 +8,7 @@ let multiplyButton = document.querySelector('.multiply');
 
 let clearButton = document.querySelector('.clear');
 
-let resultText = document.querySelector('.resut');
+let resultText = document.querySelector('.result');
 
 // функция очистки
 clearButton.addEventListener('click', function () {
