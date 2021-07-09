@@ -18,24 +18,65 @@ body {
   height: 100vh; }
 
 .calc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  place-items: center;
   height: 600px;
   width: 400px;
   background-color: #c4743c;
   -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
           box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px; }
+
+.result {
+  height: 80px;
+  width: 140px;
+  font-size: 2em;
+  background-color: #fff; }
+
+.calc .b .number-one {
+  height: 70px;
+  width: 120px;
+  border: 10px;
+  font-size: 2em; }
+
+.calc .b .number-two {
+  height: 70px;
+  width: 120px;
+  border: 10px;
+  font-size: 2em; }
+
+.plus {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.7em; }
+
+.minus {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.7em; }
+
+.divide {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.7em; }
+
+.multiply {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.7em; }
+
+.clear {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px;
+  font-size: 1.7em; }
 
 /*# sourceMappingURL=style.css.map */
