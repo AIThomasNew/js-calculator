@@ -1,25 +1,30 @@
 // миксины
-@mixin btnSize {
+@mixin btnStyle {
   height: 50px;
   width: 50px;
   border-radius: 10px;
   font-size: 1.7em;
+  border: none;
 }
 
-@mixin inputSize {
+@mixin inputStyle {
   height: 70px;
   width: 120px;
   border: 10px;
   font-size: 2em;
+  border-radius: 10px;
 }
 
+// общий стиль
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
+  font-family: 'Poppins', sans-serif;
 }
 
+// калькулятор относительно тела документа
 body {
   display: flex;
   justify-content: center;
@@ -35,45 +40,53 @@ body {
   place-items: center;
   height: 600px;
   width: 400px;
-  background-color: rgb(196, 116, 60);
+  background: linear-gradient(180deg, rgb(6, 207, 243), rgb(66, 92, 236));
   box-shadow: 0 15px 20px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
 }
 
 // стиль для результата
 .result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 80px;
   width: 140px;
-  font-size: 2em;
+  font-size: 2.5em;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 // стили для инпутов
 .calc .b .number-one {
-  @include inputSize;
+  @include inputStyle;
 }
 
 .calc .b .number-two {
-  @include inputSize;
+  @include inputStyle;
 }
 
 // стили для кнопок-операторов
 .plus {
-  @include btnSize;
+  @include btnStyle;
 }
 
 .minus {
-  @include btnSize;
+  @include btnStyle;
 }
 
 .divide {
-  @include btnSize;
+  @include btnStyle;
 }
 
 .multiply {
-  @include btnSize;
+  @include btnStyle;
 }
 
 .clear {
-  @include btnSize;
+  @include btnStyle;
+}
+
+button:hover {
+  background-color: #fff;
 }
